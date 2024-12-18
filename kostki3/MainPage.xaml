@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kostki3.MainPage">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label Text="Rzuć kostkami (Zdobąć więcej niż 22 punkty by wygrać)" HorizontalOptions="Center" />
+            <Button
+                x:Name="gambling"
+                Text="Rzuć Kostkami" 
+                Clicked="BBQ"
+                HorizontalOptions="Fill"
+                WidthRequest="170"
+                VerticalOptions="Center"/>
+            <Label x:Name="Display" />
+            <Grid Margin="20" ColumnSpacing="25" ColumnDefinitions="*,*,*,*,*">
+               
+                <Image x:Name="k1Image" Source="k0.png" Grid.Column="0" />
+                <Image x:Name="k2Image" Source="k0.png" Grid.Column="1" />
+                <Image x:Name="k3Image" Source="k0.png" Grid.Column="2" />
+                <Image x:Name="k4Image" Source="k0.png" Grid.Column="3" />
+                <Image x:Name="k5Image" Source="k0.png" Grid.Column="4" />
+
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
